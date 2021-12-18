@@ -1,0 +1,202 @@
+/* MEDIA QUERIES
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+1em = 16px
+*/
+
+/* LARGE DESKTOPS */
+@media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; 
+    } 
+}
+
+
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; 
+    }
+    .logo {
+        margin: 0 10rem;
+    }
+    .header,
+    .service-heading,
+    .service-lists,
+    .intro-heading,
+    .intro-description,
+    .work-heading,
+    .work-description,
+    .team-heading,
+    .team-description,
+    .facts-heading,
+    .facts,
+    .contact-heading,
+    .details-container {
+        margin-left: 10rem;
+    }
+    .work-photos {
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+    .team-photos{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+    .fact {
+        margin-right: 15rem;
+    }
+    footer{
+        padding: 5rem 10rem;
+    }
+}
+
+
+
+/* TABLET PORTRAIT */
+@media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; 
+    }
+    body {
+        padding: 0; 
+      } 
+    .logo {
+        margin: 0 8rem;
+    }
+    .header,
+    .service-heading,
+    .service-lists,
+    .intro-heading,
+    .intro-description,
+    .work-heading,
+    .work-description,
+    .team-heading,
+    .team-description,
+    .facts-heading,
+    .facts,
+    .contact-heading,
+    .details-container {
+        margin-left: 8rem;
+    }
+    .service {
+        margin-right: 10rem;
+    }
+    .work-photos {
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+    .team-photos{
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+    .fact {
+        margin-right: 10rem;
+    }
+    footer {
+        padding: 5rem 8rem;
+    } 
+}
+
+
+
+/* PHONES */
+@media only screen and (max-width: 37.5em) { 
+    html {
+        font-size: 50%; 
+    }
+    .logo {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .navigation-container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .navigation-lists{
+        flex-wrap: wrap;
+        padding-left: 1rem;
+        line-height: 2;
+        font-size: 1.25rem;
+    }
+    .header-container{
+        height: 90vh;
+    }
+    .header-main{
+        font-size: 4rem;
+    }
+    .header-sub {
+        font-size: 1.5rem;
+    }
+    .header,
+    .service-heading,
+    .service-lists,
+    .intro-heading,
+    .intro-description,
+    .work-heading,
+    .work-description,
+    .team-heading,
+    .team-description,
+    .facts-heading,
+    .facts,
+    .contact-heading,
+    .details-container {
+        margin-left: 4rem;
+    }
+    .services-container{
+        height: 75vh;
+    }
+    .service-heading,
+    .intro-heading,
+    .work-heading,
+    .team-heading,
+    .facts-heading,
+    .contact-heading {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+    .service-lists {
+        flex-wrap: wrap;
+    }
+    .service {
+        margin-top: 5rem;
+    }
+    .work-photos {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+    .facts {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .fact {
+        margin-top: 3rem;
+    }
+    .fact > .count {
+        font-size: 3rem;
+    }
+    .fact > .fact-label {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    .details-container {
+        flex-direction: column;
+    }
+    .details-container > form input, 
+    .details-container > form textarea {
+        min-width: auto;
+        width: 100%;
+    }
+    .contact-heading {
+        padding-bottom: 4rem;
+    }
+    .details {
+        padding-top: 4rem;
+    }
+    footer {
+        flex-direction: column;
+        padding: 4rem 5rem;
+    }
+    .copyright{
+        margin-right: 0;
+    }   
+}
