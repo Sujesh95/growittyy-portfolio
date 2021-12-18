@@ -1,0 +1,103 @@
+/* Base classes  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; 
+}
+@media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; 
+    } 
+}
+@media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; 
+    } 
+}
+@media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; 
+    } 
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  /* padding: 3rem;  */
+}
+@media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; 
+    } 
+}
+
+/* Header */
+.header_container {
+    height: 120vh;
+    background-image: linear-gradient(to right bottom, rgb(86, 97, 198, 0.8), rgb(86, 97, 198, 0.8)), url('./images/header_bg.png');
+    background-size: cover;
+    background-position: top;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12rem;
+    margin-left: 20rem;
+}
+
+.navigation_container {
+    width: 100%;
+    min-height: 10rem;
+    background-color: rgb(81, 90, 178, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 5px;
+    margin: 0 20rem;
+}
+
+.navigation-lists {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.navigation-list:not(:last-of-type){
+    margin: 0 1rem;
+}
+
+.navigation-list > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header_main {
+    font-size: 9rem;
+    line-height: 1;
+}
+
+.header_main > span:nth-last-of-type(2),
+.header_main > span:last-of-type {
+    color: white;
+}
+
+.header_sub {
+    font-size: 2rem;
+    margin-top: 6rem;
+    color: white;
+    letter-spacing: 5px;
+}
